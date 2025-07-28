@@ -13,10 +13,12 @@
     <header>
         <h1>Marvel HD</h1>
        <nav class="menu">
-        <a href="#">Inicio</a>
-        <a href="#">Quarteto Fantastico</a>
-        <a href="#">Vingadores</a>
-        <a href="#">X-men</a>
+        <a href="#" id="menuu" onclick="apareceSubmenu()">Quarteto Fantástico</a>
+    <ul id="submenu" class="submenu">
+      <li><a href="2005.html">2005</a></li>
+      <li><a href="#">2007</a></li>
+      <li><a href="#">2015</a></li>
+    </ul>
     </nav>
     </header>
     <main>
@@ -28,18 +30,22 @@
 
                 </div>
                 <div class="media">
-                    <img id="imagem" src="img/quarteto-removebg-preview.png" width="300" height="250" alt="">
+                    <img id="imagem" onclick="trocaimg2()" src="img/quarteto-removebg-preview.png" width="300" height="250" alt="">
                 </div>
             </article>
             <article class="text-media">
-                <div class="media">
-                    <iframe width="500" height="270" src="https://www.youtube.com/embed/P273sRlm4tM?si=P9UaeTr8ORwhL3cW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="trailer">
+                    <a href="https://www.youtube.com/embed/CcSIvhDlYWw?si=Ec5Oeh-jSjgd3Dnj" target="trailer">Trailer 1</a>
+                    <a href="https://www.youtube.com/embed/P273sRlm4tM?si=P9UaeTr8ORwhL3cW" target="trailer">Trailer 2</a>
+                </div>
+                <div class="media" id="media2">
+                  
+                    <iframe width="500" name="trailer" height="250"   frameborder="0"  ></iframe>
                 </div>
                 <div class="text">
                     <h2>Trailer sobre o novo filme</h2>
                     <p>O novo filme do Quarteto Fantástico, intitulado The Fantastic Four: First Steps, estreia no dia 25 de julho de 2025 nos Estados Unidos, com previsão de chegada ao Brasil no dia 24. O longa será o primeiro da Fase Seis do Universo Cinematográfico da Marvel (MCU) e está gerando grandes expectativas por marcar a entrada oficial da “Primeira Família da Marvel” no universo principal da franquia.A direção fica por conta de Matt Shakman, conhecido por seu trabalho em WandaVision, e o elenco principal conta com nomes de peso: Pedro Pascal será o Sr. Fantástico (Reed Richards), Vanessa Kirby interpretará a Mulher Invisível (Sue Storm), Joseph Quinn viverá o Tocha Humana (Johnny Storm), e Ebon Moss-Bachrach será o Coisa (Ben Grimm). Os vilões centrais da trama serão Galactus, interpretado por Ralph Ineson, e a Surfista Prateada, vivida por Julia Garner.</p>
                     <p>O enredo do filme se passa em um universo paralelo chamado Earth‑828, com uma ambientação retro-futurista inspirada nos anos 1960. Ao contrário de versões anteriores, essa nova adaptação não mostrará a origem dos personagens. Os heróis já aparecem atuando como equipe, e a narrativa se concentra em sua dinâmica familiar, responsabilidade e união diante da ameaça cósmica de Galactus. Esse enfoque temático promete trazer um equilíbrio entre aventura, emoção e humanidade, resgatando o espírito dos quadrinhos clássicos.
-
                 </div>
             </article>
 
@@ -49,36 +55,79 @@
                 <div class="text">
                     <h2>Curiosidades sobre o    Quarteto Fantástico</h2>
                     <ul>
-                        <p> <li>1. Primeira equipe da Marvel moderna:</li>
+                        <strong>
+                            <p> <li><strong>1. Primeira equipe da Marvel moderna:</strong></li>
+                        </strong>
                         <p>O Quarteto Fantástico foi o primeiro grupo de heróis criado pela Marvel na Era Moderna dos Quadrinhos, em 1961. Eles deram início ao estilo de histórias mais humanas e realistas que a Marvel ficou famosa por fazer.</p>
                         
-                        <li> 2. Eles não usam máscaras:</li>
+                        <li> <strong>2. Eles não usam máscaras:</strong></li>
                         <p>Diferente da maioria dos heróis da época, o Quarteto não esconde suas identidades. Eles são heróis públicos, conhecidos pelo mundo todo.</p>
                         
-                         <li>3. O Coisa nunca voltou ao normal:</li>
+                         <li><strong>3. O Coisa nunca voltou ao normal:</strong></li>
                         <p>Enquanto os outros membros do grupo conseguem controlar ou esconder seus poderes, Ben Grimm (o Coisa) ficou preso em sua forma de pedra e sofre muito com isso. Isso traz uma carga emocional única para o personagem.</p>
                         
-                        <li>4. O Quarteto enfrentou o primeiro vilão cósmico da Marvel:</li>
+                        <li><strong>4. O Quarteto enfrentou o primeiro vilão cósmico da Marvel:</strong></li>
                         <p>Eles foram os primeiros a enfrentar Galactus, o devorador de mundos — um dos vilões mais poderosos e simbólicos do universo Marvel.</p>
                         
-                        <li>5. Stan Lee quase desistiu antes de criá-los:</li>
+                        <li><strong>5. Stan Lee quase desistiu antes de criá-los:</strong></li>
                         <p>O criador Stan Lee pensava em desistir dos quadrinhos antes de fazer o Quarteto. Sua esposa o incentivou a escrever algo diferente e mais sério — assim nasceu o Quarteto Fantástico, e mudou tudo.</p>
                         
-                        <li>6. Já existiu um filme secreto:</li>
+                        <li><strong>6. Já existiu um filme secreto:</strong></li>
                         <p>Em 1994, foi feito um filme do Quarteto Fantástico com baixo orçamento e que nunca foi lançado oficialmente. Ele foi produzido apenas para manter os direitos dos personagens com o estúdio, e se tornou um clássico cult entre os fãs.</p></p>
                     </ul>
                 </div>
                 <div class="media"> 
-                    <img id="imgquarte" src="img/4fan.jpg" width="500" height="270" alt="">
+                    <img id="imgquarte" onclick="trocaimg()" src="img/4fan.jpg" width="500" height="270" alt="">
                 </div>   
             </article>
 
         </section>
-
+        
     </main>
 
     <footer>
         <h3>veja também sobre as outras equipes da marvel. </h3>
     </footer>
+
+
+
+    <script>
+        function trocaimg(){
+            let img = document.getElementById('imgquarte') 
+            if (img.src.includes('img/4fan.jpg')) {
+                img.src = 'img/gala.jpg'
+            }
+            else if (img.src.includes( 'img/gala.jpg')){
+                 img.src = 'img/class.jpg'
+            }
+             else if (img.src.includes( 'img/class.jpg')){
+                 img.src = 'img/quatro.jpg'
+            }
+             else if (img.src.includes( 'img/quatro.jpg')){
+                 img.src = 'img/dedos.jpg'
+            }
+            else{
+                img.src = 'img/4fan.jpg'
+            }
+        
+        }
+
+        function trocaimg2() {
+            let img = document.getElementById('imagem')
+            if (img.src.includes('img/quarteto-removebg-preview.png')){
+                img.src = 'img/logo4f-removebg-preview.png'
+            }
+            else if (img.src.includes( 'img/logo4f-removebg-preview.png')){
+                 img.src = 'img/escrito.png'
+            }
+            else{
+                img.src  = 'img/quarteto-removebg-preview.png'
+            }
+        }
+        function apareceSubmenu() {
+        let submenu = document.getElementById("submenu");
+        submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+}
+    </script>
 </body>
 </html>

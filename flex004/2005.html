@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2005</title>
+  <link rel="stylesheet" href="2005.css">
+  <link rel="shortcut icon" href="img/logo4f-removebg-preview.png" type="image/x-icon">
+  <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 500px)">
+
+</head>
+<body>
+  <header>
+    <h1>Marvel HD</h1>
+    <nav>
+      <a href="index.html">2025</a>
+      <a href="2005.html">2005</a>
+      <a href="#">2007</a>
+      <a href="#">2015</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="geral">
+      <article class="articleum">
+        <h1>Quarteto Fantástico 2005</h1>
+        <p>O Quarteto Fantástico é formado por quatro heróis que ganharam superpoderes após serem expostos a radiação cósmica durante uma missão espacial.</p>
+        <!-- <input id="bot" type="button" value="clique"> -->
+      </article>
+
+      <div class="img1">
+        <img id="imgquarte" onclick="trocaimg()" src="img/quar2005.jpg" alt="Imagem Quarteto" width="800px" height="400px">
+      </div>
+
+      <h2 style="text-align: center; margin-top: 40px;">Sobre a equipe</h2>
+      
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/card1.jpg" alt="Sr. Fantástico" />
+            </div>
+            <div class="flip-card-back">
+              <h2>Sr. Fantástico</h2>
+              <p>O cientista elástico e líder do grupo.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/card4.jpg" alt="Mulher Invisível" />
+            </div>
+            <div class="flip-card-back">
+              <h2>Mulher Invisível</h2>
+              <p>Consegue ficar invisível e criar campos de força.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/card2.jpg" alt="Tocha Humana" />
+            </div>
+            <div class="flip-card-back">
+              <h2>Tocha Humana</h2>
+              <p>Controla o fogo e pode voar em chamas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/card3.jpg" alt="O Coisa" />
+            </div>
+            <div class="flip-card-back">
+              <h2>O Coisa</h2>
+              <p>Possui força descomunal e pele de pedra.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sectiondois">
+        <article id="texto">
+            <div class="texto">
+                <h2>Trailer do filme</h2>
+                <p>O trailer do filme Quarteto Fantástico (2005) apresenta ao público uma prévia empolgante da origem da equipe de super-heróis mais famosa da Marvel. Após um acidente durante uma missão espacial, quatro cientistas ganham poderes extraordinários que mudam suas vidas para sempre. O vídeo destaca os efeitos visuais da época, cenas de ação eletrizantes e os conflitos internos do grupo, especialmente com a transformação de Ben Grimm no poderoso "Coisa". Além disso, o trailer revela o surgimento do vilão Doutor Destino, criando a expectativa de um confronto épico. Com uma combinação de aventura, humor e drama, o trailer promete uma história de união, descobertas e heroísmo.</p>
+            </div>
+       
+            <div class="media">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KdIC2viJuAs?si=kAtEEmvM3olibB-K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+        </article>
+    </section>
+  </main>
+
+
+  <script>
+    function trocaimg(){
+       let img = document.getElementById('imgquarte') 
+            if (img.src.includes('img/quar2005.jpg')) {
+                img.src = 'img/gala.jpg'
+            }
+            else if (img.src.includes( 'img/gala.jpg')){
+                 img.src = 'img/class.jpg'
+            }
+             else if (img.src.includes( 'img/class.jpg')){
+                 img.src = 'img/todos.jpg'
+            }
+             else if (img.src.includes( 'img/quatro.jpg')){
+                 img.src = 'img/dedos.jpg'
+            }
+            else{
+                img.src = 'img/quar2005.jpg'
+            }
+        
+     
+    }
+  </script>
+</body>
+</html>
